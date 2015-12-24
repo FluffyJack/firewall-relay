@@ -1,0 +1,35 @@
+{
+  "name": "firewall-relay",
+  "version": "0.1.0",
+  "description": "Start a service within a network, point it at the public server, and have access to all HTTP goodness available internally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluffyJack/firewall-relay.git"
+  },
+  "keywords": [
+    "firewall",
+    "relay",
+    "networking",
+    "internal",
+    "network"
+  ],
+  "author": "Jack Watson-Hamblin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FluffyJack/firewall-relay/issues"
+  },
+  "homepage": "https://github.com/FluffyJack/firewall-relay#readme",
+  "bin": {
+    "firewall-relay-producer": "bin/firewall-relay-producer.js",
+    "firewall-relay-client": "bin/firewall-relay-client.js",
+    "firewall-relay-server": "bin/firewall-relay-server.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.13.3"
+  }
+}

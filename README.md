@@ -16,7 +16,7 @@ For security, run `heroku config:set SHARED_SECRET=ABC123` (with a secret you cr
 
 ### 2. Configure & start a producer
 
-On a computer you plan to keep within the network you can't access externally, run `npm install -g firewall-relay` to install. You can now start the producer with `firewall-relay relay=RELAY_URL`.
+On a computer you plan to keep within the network you can't access externally, run `npm install -g firewall-relay` to install. You can now start the producer with `firewall-relay-producer relay=RELAY_URL`.
 
 > **NOTE** The following is not yet implemented.
 
@@ -38,7 +38,7 @@ To whitelist the domains the producer should share, you can create a file in you
 
 * `allowedDomains` - whitelist method, only allow access to these and no others
 * `disallowedDomains` - blacklist method, disallow access to these domains, but allow access to all others
-* `defaultRelay` - saves you from having to pass it to the `firewall-relay` command
+* `defaultRelay` - saves you from having to pass it to the `firewall-relay-producer` command
 * `secret` - must be set if your relay has a `SHARED_SECRET` environment variable set
 
 ### 3. Start a client (optional)
